@@ -1,0 +1,46 @@
+#include <string>
+  string::size() /* string length */
+  string::empty() /* is it empty */
+
+  string::c_str() /* return a pointer to a C style string */ 
+
+  string::operator [](size_type i) /* access the ith character */ 
+
+  string::append(s) /* append to string */ 
+  string::erase(n,m) /* delete a run of characters */ 
+  string::insert(size_type n, const string&s) /* insert string s at n */ 
+  string::find(s) 
+  string::rfind(s) /* search left or right for the given string */ 
+  string::first() 
+  string::last() /* get characters, also there are iterators */
+
+STD
+#include <vector> // Array
+  vector<int> V(4,100); // four ints with value 100
+    V.push_back()
+    V.pop_back()
+    V.front()
+    V.back()
+
+#include <list>   // Doubly-linked list
+#include <slist>  // Singly-linked list
+#include <deque>  // Array-like structure, with efficient insertion and removal at both ends
+#include <set>    // Set of unique elements
+
+#include <queue>  // FIFO (first-in, first-out) structure
+  queue<int> Q; Q.front(), Q.back(), Q.push(), Q.pop(), Q.empty()
+  priority_queue<int> P; P.top(), P.push(), P.pop(), p.empty()
+
+#include <map>    // Set of unique elements
+  map<char, int> M; M.erase(), M.find(), M.insert()
+
+#include <stack>  // LIFO (last in, first out) structure
+  stack<int> S; S.push(), S.top(), S.pop() and S.empty()
+
+#include <cmath>
+
+
+#include <stdio.h>
+  printf ("Preceding with zeros: %09li \n", (12345678912L)%1000000000); //345678912
+  printf ("Preceding with zeros: %09li \n", (8912L)%1000000000); //000008912
+  printf ("floats: %.2f \n", 3.1416); //3.14
