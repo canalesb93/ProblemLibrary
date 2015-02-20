@@ -1,12 +1,12 @@
 LeetCode:
   ✔ 1 - Two Sum - @Medium @done (15-02-17 20:40)
   ✔ 2 - Add Two Numbers - @Medium @done (15-02-17 21:15)
-  ☐ 3 - Longest Substring Without Repeating Characters - @Medium
+  ✔ 3 - Longest Substring Without Repeating Characters - @Medium @done (15-02-20 01:21)
   ☐ 4 - Median of Two Sorted Arrays - @Hard
   ✔ 5 - Longest Palindromic Substring - @Medium @done (15-02-19 01:43)
   ✔ 6 - ZigZag Conversion - @Easy @done (15-02-19 01:43)
   ✔ 7 - Reverse Integer - @Easy @done (15-02-19 01:43)
-  ☐ 8 - String to Integer (atoi) - @Easy
+  ✔ 8 - String to Integer (atoi) - @Easy @done (15-02-20 01:21)
   ☐ 9 - Palindrome Number - @Easy
   ☐ 10 - Regular Expression Matching - @Hard
   ☐ 11 - Container With Most Water - @Medium
@@ -18,7 +18,7 @@ LeetCode:
   ☐ 17 - Letter Combinations of a Phone Number - @Medium
   ☐ 18 - 4Sum - @Medium
   ☐ 19 - Remove Nth Node From End of List - @Easy
-  ☐ 20 - Valid Parentheses - @Easy
+  ✔ 20 - Valid Parentheses - @Easy @done (15-02-20 02:33)
   ☐ 21 - Merge Two Sorted Lists - @Easy
   ☐ 22 - Generate Parentheses - @Medium
   ☐ 23 - Merge k Sorted Lists - @Hard
@@ -36,7 +36,7 @@ LeetCode:
   ☐ 35 - Search Insert Position - @Medium
   ☐ 36 - Valid Sudoku - @Easy
   ☐ 37 - Sudoku Solver - @Hard
-  ☐ 38 - Count and Say - @Easy
+  ✔ 38 - Count and Say - @Easy @done (15-02-20 02:33)
   ☐ 39 - Combination Sum - @Medium
   ☐ 40 - Combination Sum II - @Medium
   ☐ 41 - First Missing Positive - @Hard
