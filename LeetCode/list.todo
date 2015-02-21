@@ -7,7 +7,7 @@ LeetCode:
   ✔ 6 - ZigZag Conversion - @Easy @done (15-02-19 01:43)
   ✔ 7 - Reverse Integer - @Easy @done (15-02-19 01:43)
   ✔ 8 - String to Integer (atoi) - @Easy @done (15-02-20 01:21)
-  ☐ 9 - Palindrome Number - @Easy
+  ✔ 9 - Palindrome Number - @Easy @done (15-02-21 02:30)
   ☐ 10 - Regular Expression Matching - @Hard
   ☐ 11 - Container With Most Water - @Medium
   ☐ 12 - Integer to Roman - @Medium
@@ -163,13 +163,13 @@ LeetCode:
   ☐ 162 - Find Peak Element - @Medium
   ☐ 163 - Missing Ranges  - @Medium
   ☐ 164 - Maximum Gap - @Hard
-  ☐ 165 - Compare Version Numbers - @Easy
+  ✔ 165 - Compare Version Numbers - @Easy @done (15-02-21 01:34)
   ☐ 166 - Fraction to Recurring Decimal - @Medium
   ☐ 167 - Two Sum II - Input array is sorted  - @Medium
-  ☐ 168 - Excel Sheet Column Title - @Easy
-  ☐ 169 - Majority Element - @Easy
+  ✔ 168 - Excel Sheet Column Title - @Easy @done (15-02-20 15:24)
+  ✔ 169 - Majority Element - @Easy @done (15-02-21 01:34)
   ☐ 170 - Two Sum III - Data structure design  - @Easy
-  ☐ 171 - Excel Sheet Column Number - @Easy
+  ✔ 171 - Excel Sheet Column Number - @Easy @done (15-02-20 16:08)
   ☐ 172 - Factorial Trailing Zeroes - @Easy
   ☐ 173 - Binary Search Tree Iterator - @Medium
   ☐ 174 - Dungeon Game - @Hard
