@@ -57,11 +57,17 @@ int main ()
 // PAHNAPLSIIGYIR
 
 
-// P   A   H   N
-// A P L S I I G
-// Y   I   R
-
 // P     I     N
 // A   L S   I G
 // Y A   H R
 // P     I
+
+// P   A   H   N
+// A P L S I I G
+// Y   I   R
+
+// P       H
+// A     S I
+// Y   I   R
+// P L     I G
+// A       N
