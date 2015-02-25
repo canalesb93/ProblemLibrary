@@ -98,11 +98,11 @@ LeetCode:
   ☐ 97 - Interleaving String - @Hard
   ☐ 98 - Validate Binary Search Tree - @Medium
   ☐ 99 - Recover Binary Search Tree - @Hard
-  ☐ 100 - Same Tree - @Easy
+  ✔ 100 - Same Tree - @Easy @done (15-02-22 13:11)
   ☐ 101 - Symmetric Tree - @Easy
   ☐ 102 - Binary Tree Level Order Traversal - @Easy
   ☐ 103 - Binary Tree Zigzag Level Order Traversal - @Medium
-  ☐ 104 - Maximum Depth of Binary Tree - @Easy
+  ✔ 104 - Maximum Depth of Binary Tree - @Easy @done (15-02-22 13:11)
   ☐ 105 - Construct Binary Tree from Preorder and Inorder Traversal - @Medium
   ☐ 106 - Construct Binary Tree from Inorder and Postorder Traversal - @Medium
   ☐ 107 - Binary Tree Level Order Traversal II - @Easy
@@ -142,7 +142,7 @@ LeetCode:
   ✔ 141 - Linked List Cycle - @Medium @done (15-02-22 13:08)
   ☐ 142 - Linked List Cycle II - @Medium
   ☐ 143 - Reorder List - @Medium
-  ☐ 144 - Binary Tree Preorder Traversal - @Medium
+  ✔ 144 - Binary Tree Preorder Traversal - @Medium @done (15-02-23 09:08)
   ☐ 145 - Binary Tree Postorder Traversal - @Hard
   ☐ 146 - LRU Cache - @Hard
   ☐ 147 - Insertion Sort List - @Medium

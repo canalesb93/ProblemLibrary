@@ -41,18 +41,6 @@ bool isSameTree(TreeNode *p, TreeNode *q) {
   return left && right;
 }
 
-int maxDepth(TreeNode *root) {
-  if(root == NULL){
-    return 0;
-  }
-  int left, right;
-
-  left = maxDepth(root->left);
-  right = maxDepth(root->right);
-
-  return left > right ? left + 1 : right + 1;
-} 
-
 int main ()
 {
   TreeNode *root1 = new TreeNode(5);
