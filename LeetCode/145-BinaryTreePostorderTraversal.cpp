@@ -30,6 +30,7 @@ struct TreeNode {
  //  \
  //   7
 
+
 vector<int> postorderTraversal(TreeNode *root) {
   vector<int> ans;
   vector<TreeNode *> stack;
@@ -40,6 +41,7 @@ vector<int> postorderTraversal(TreeNode *root) {
   
   while(stack.size() > 0 || aux != NULL){
 
+    // GO LEFT
     if(aux != NULL){
       stack.push_back(aux);
       aux = aux->left;
@@ -59,15 +61,16 @@ vector<int> postorderTraversal(TreeNode *root) {
   return ans;
 }
 
+// recursively
 vector<int> postorderTraversal2(TreeNode *root) {
   vector<int> a, b, ans;
   //fill with data
 
   if(root == NULL)
     return ans;
-  a = postorderTraversal(root->left);
+  a = postorderTraversal2(root->left);
   ans.insert(ans.end(), a.begin(), a.end());
-  b = postorderTraversal(root->right);
+  b = postorderTraversal2(root->right);
   ans.insert(ans.end(), b.begin(), b.end());
 
   ans.push_back(root->val);
@@ -82,9 +85,9 @@ int main ()
   root->right = new TreeNode(2);
   root->left = new TreeNode(4);
   root->left->right = new TreeNode(7);
-  root->left->right->left = new TreeNode(3);
+  // root->left->right->left = new TreeNode(3);
 
-  postorderTraversal(root);
+  postorderTraversal2(root);
   // cout << root->val << endl;
   // cout << root->right->val << endl;
   return 0;
