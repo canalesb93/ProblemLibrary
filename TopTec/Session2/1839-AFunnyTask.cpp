@@ -1,5 +1,9 @@
 /*
-Hello World!
+4
+3
+2
+1
+0
 */
 
 #include <iostream>
@@ -19,9 +23,13 @@ using namespace std;
 
 int main ()
 {
-  string hello;
-  getline(cin, hello);
-  cout << hello << endl;
+  int cases;
+  scanf("%d", &cases);
+  while(cases--){
+    int N;
+    scanf("%d", &N);
+    printf("%d\n", (((((N+3)*2)+3)*2)+3)*2);
+  }
 
   return 0;
 }

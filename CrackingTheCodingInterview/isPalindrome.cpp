@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-bool isPermutation(string myString){
+bool isPalindrome(string myString){
   int length = myString.length();
   int middle = length/2, even = 0;
   int start = 0;
@@ -23,6 +23,6 @@ bool isPermutation(string myString){
 int main ()
 {
   string test = "test", test2 = "tesset", test3 = "tes";
-  cout << isPermutation(test3) << endl;
+  cout << isPalindrome(test3) << endl;
   return 0;
 }
