@@ -24,11 +24,27 @@ Hello World!
  
 using namespace std;
 
+
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x) : val(x), next(NULL) {}
+};
+
 int main ()
 {
-  string hello;
-  getline(cin, hello);
-  cout << hello << endl;
+
+  ListNode *l1 = new ListNode(1);
+  l1->next = new ListNode(2);
+  l1->next->next = new ListNode(5);
+
+  ListNode *l2 = new ListNode(9);
+  l2->next = new ListNode(5);
+
+
+  stack<int> S;
+
+
 
   return 0;
 }

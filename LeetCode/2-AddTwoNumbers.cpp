@@ -2,16 +2,25 @@
 */
 
 #include <iostream>
-#include <cmath>
+#include <cstdio>
 #include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
+#include <cstring>
 #include <string>
+#include <cctype>
+#include <stack>
+#include <queue>
+#include <list>
+#include <vector>
+#include <map>
+#include <sstream>
+#include <cmath>
+#include <bitset>
 #include <utility>
-#include <stdio.h>
-#include <ctype.h>
-
+#include <set>
+#include <numeric>
+#include <ctime>
+#include <fstream>
+ 
 using namespace std;
 
 struct ListNode {
@@ -21,53 +30,52 @@ struct ListNode {
 };
 
 
-int getAndMove(ListNode* &l){
-  int x = 0;
-  if(l != NULL){
-    x = l->val;
-    l = l->next;
-  }
-  return x;
-}
 
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-  int a = 0, b = 0, c = 0, carry = 0;
+  int carry = 0, current_sum;
+
   ListNode *head = NULL, **ans = &head;
 
-  while(l1 != NULL || l2 != NULL){
-    a = getAndMove(l1);
-    b = getAndMove(l2);
-    c = a + b + carry;
 
-    ListNode *node = new ListNode(c%10);
+  while(l1 || l2){
+    int x = 0, y = 0;
+    if(l1) x = l1->val;
+    if(l2) y = l2->val;
+
+    current_sum = x + y;
+    current_sum += carry;
+
+    carry = current_sum/10;
+   
+    ListNode *node = new ListNode(current_sum%10);
     *ans = node;
     ans = (&node->next);
 
-    carry = c/10;
+    if(l1) l1=l1->next;
+    if(l2) l2=l2->next;
   }
-  if(carry > 0){
-    ListNode *node = new ListNode(carry);
-    *ans = node;
-  }
+  if(carry>0)
+    *ans = new ListNode(carry);
   return head;
+
 }
 
 int main ()
 {
 
-  ListNode *l1 = new ListNode(1);
-  l1->next = new ListNode(8);
+  ListNode *l1 = new ListNode(5);
+  l1->next = new ListNode(4);
   // l1->next->next = new ListNode(3);
   
-  ListNode *l2 = new ListNode(0);
+  ListNode *l2 = new ListNode(5);
   // l2->next = new ListNode(6);
   // l2->next->next = new ListNode(4);
 
   ListNode *ans = addTwoNumbers(l2, l1);
-  cout << ans->val;
-  cout << ans->next->val;
-  // cout << ans->next->next->val;
-  cout << endl;
-
+  while(ans){
+    cout << ans->val<< " ";
+    ans = ans->next;
+    
+  }
   return 0;
 }

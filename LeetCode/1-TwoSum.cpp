@@ -1,31 +1,38 @@
 /*
-Hello World!
 */
 
 #include <iostream>
-#include <cmath>
+#include <cstdio>
 #include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
+#include <cstring>
 #include <string>
+#include <cctype>
+#include <stack>
+#include <queue>
+#include <list>
+#include <vector>
+#include <map>
+#include <sstream>
+#include <cmath>
+#include <bitset>
 #include <utility>
-#include <stdio.h>
-#include <ctype.h>
+#include <set>
+#include <numeric>
+#include <ctime>
+#include <fstream>
+
 
 using namespace std;
 
-vector<int> twoSum(vector<int> &numbers, int target) {
+vector<int> twoSum(vector<int> &nums, int target) {
+  map<int, int> myMap;
   vector<int> answer;
-  int size = numbers.size();
-  map<int, int> m;
-  for(int i = 0; i < size; i++){
-    if(m.find(numbers[i]) == m.end()){
-      m[target - numbers[i]] = i;
+  for(int i = 0; i < nums.size(); i++){
+    if(myMap.find(target - nums[i]) != myMap.end()){
+      answer.push_back(myMap[target - nums[i]] + 1); answer.push_back(i + 1);
+      return answer;
     } else {
-      answer.push_back(m[numbers[i]]+1);
-      answer.push_back(i+1);
-      break;
+      myMap[nums[i]] = i;
     }
   }
   return answer;
@@ -33,6 +40,7 @@ vector<int> twoSum(vector<int> &numbers, int target) {
 
 int main ()
 {
+
   int myints[] = {2, 7, 11, 15};
   int target = 9;
   vector<int> numbers(myints, myints + sizeof(myints) / sizeof(int) );

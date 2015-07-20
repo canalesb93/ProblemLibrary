@@ -16,23 +16,22 @@ using namespace std;
 
 int lengthOfLongestSubstring(string s) {
   map<char, int> m;
-  int maxLen = 0;
-  int lastRepeatPos = -1;
-  for(int i=0; i<s.size(); i++){
-    if (m.find(s[i])!=m.end() && lastRepeatPos < m[s[i]]) {
-        lastRepeatPos = m[s[i]];
-    }
-    if ( i - lastRepeatPos > maxLen ){
-        maxLen = i - lastRepeatPos;
+  int max = 0, last_repeat = -1;
+
+  for(int i = 0; i < s.length(); i++){
+
+    if(m.find(s[i]) != m.end() && last_repeat < m[s[i]]){
+      last_repeat = m[s[i]];
     }
     m[s[i]] = i;
+    if(i - last_repeat > max) max = i - last_repeat;
   }
-  return maxLen;
+  return max;
 }
 
 int main ()
 {
   //                                01234567
-  cout << lengthOfLongestSubstring("testerpo") << endl;
+  cout << lengthOfLongestSubstring("c") << endl;
   return 0;
 }

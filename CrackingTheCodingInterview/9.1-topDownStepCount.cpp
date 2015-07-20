@@ -24,12 +24,20 @@ Hello World!
  
 using namespace std;
 
+map<int, int> m;
+
+int countSteps(int n){
+  if(n < 0) return 0;
+  if(n == 0) return 1;
+  if(m[n] != 0) return m[n];
+  m[n] = countSteps(n-1) + countSteps(n-2) + countSteps(n-3);
+  return m[n];
+}
+
 int main ()
 {
-  string hello;
-  getline(cin, hello);
-  cout << hello << endl;
-
+  
+  cout << countSteps(2) << endl;
   return 0;
 }
  
