@@ -43,7 +43,7 @@ int main ()
 
   // m[make_pair(1,1)]=-1;//blocks in the map
   // m[make_pair(2,0)]=-1;//blocks in the map
-  cout << countPaths(0,0,10,10) <<endl; // paths found
+  cout << countPaths(0,0,5,5) <<endl; // paths found
   return 0;
 }
  

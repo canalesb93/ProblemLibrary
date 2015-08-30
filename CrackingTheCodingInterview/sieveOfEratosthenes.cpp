@@ -43,7 +43,8 @@ void generatePrimes(int max){
 int main ()
 {
   int max;
-  scanf("%d", &max);
+  // scanf("%d", &max);
+  max = 1000000;
   generatePrimes(max);
   printf("Prime Total: %lu\n", primes.size());
   // for(int i = 0; i < primes.size(); i++){

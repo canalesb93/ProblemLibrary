@@ -31,16 +31,16 @@ struct Node {
 };
 
 class Stack {
-  public:
+  private: 
     Node *front;
+  public:
     Stack() : front(NULL) {}
     ~Stack(){
       while(front != NULL) pop();
     }
-
-    Stack& push(int x){
+    
+    void push(int x){
       front = new Node(x, front);
-      return *this;
     }
 
     int pop(){
