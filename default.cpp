@@ -1,5 +1,5 @@
 /*
-Hello World!
+HelloWorld!
 */
 
 #include <iostream>
@@ -24,12 +24,22 @@ Hello World!
  
 using namespace std;
 
-int main ()
+double expVA(double x)
 {
-  string hello = "Hello World";
-  // getline(cin, hello);
-  cout << hello << endl;
+  double z;  // numero aleatorio z uniforme entre 0 y 1   
+  do
+  {
+    z = ((double) rand() / RAND_MAX);
+  }
+  while ((z == 0) || (z == 1));
+
+  return(-x * log(z));
+}
+
+
+int main() {
+  cout << expVA(0.5) << endl; // -2147483648
 
   return 0;
 }
- 
+

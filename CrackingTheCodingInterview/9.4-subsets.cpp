@@ -31,7 +31,7 @@ void placeSet(int n, vector< vector<int> > &subsets, vector<int> mySet){
 
   placeSet(n-1, subsets, mySet);
   int number = mySet[n];
-
+  
   int size = subsets.size();
   for(int i = 0; i < size; i++){
     vector<int> newSubset = subsets[i];
@@ -39,6 +39,8 @@ void placeSet(int n, vector< vector<int> > &subsets, vector<int> mySet){
     subsets.push_back(newSubset);
   }
 }
+
+
 
 vector< vector<int> > getAllSubsets(vector<int> mySet){
   vector< vector<int> > subsets;
@@ -51,20 +53,20 @@ vector< vector<int> > getAllSubsets(vector<int> mySet){
 int main ()
 {
 
-  int myints[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  int myints[] = { 1, 2, 3 };
   mySet = vector<int>(myints, myints + sizeof(myints) / sizeof(int) );
 
   vector< vector<int> > subsets = getAllSubsets(mySet);
 
 
   cout << "Subset count: " << subsets.size() << endl;
-  // for(int i = 0; i < subsets.size(); i++){
-  //   cout << "{ ";
-  //   for(int j = 0; j < subsets[i].size(); j++){
-  //     cout << subsets[i][j] << " ";
-  //   }
-  //   cout << "} " << endl;
-  // }
+  for(int i = 0; i < subsets.size(); i++){
+    cout << "{ ";
+    for(int j = 0; j < subsets[i].size(); j++){
+      cout << subsets[i][j] << " ";
+    }
+    cout << "} " << endl;
+  }
   // for(int i = 0; i < mySet.size(); i++){
   //   cout << mySet[i] << " "; 
   // }

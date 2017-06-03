@@ -13,7 +13,7 @@
 */
 
 #include <iostream>
-#include <cstdio>1
+#include <cstdio>
 #include <algorithm>
 #include <cstring>
 #include <string>
